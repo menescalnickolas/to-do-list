@@ -2,9 +2,9 @@
 
 function newItem() {
     /* Add a new item*/
+    let li = $('<li></li>');
     let inputValue = $('#input').val();
-    let li = $('<li>').text(inputValue);
-    $('#list').append(li);
+    li.append(inputValue);
 
     if (inputValue === '') {
         alert("You must write something!");
@@ -24,8 +24,5 @@ function newItem() {
     li.append(crossOutButton);
 
     crossOutButton.on('click', deleteListItem);
-
-
-
 
 } 
