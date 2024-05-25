@@ -30,4 +30,8 @@ function newItem() {
         li.addClass('delete');
     }
     
+    /*Reordering items*/
+    $('#list').sortable();
+
+
 } 
